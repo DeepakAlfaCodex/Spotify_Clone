@@ -127,13 +127,14 @@ a {
   color: #fff;
 }
 .sticky-nav {
+  border-radius: 2rem;
   position: sticky;
   top: 0;
-  background-color: #000000;
+  background-color: #121212;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
   z-index: 100;
 }
 
@@ -283,8 +284,12 @@ input[type = "range"] {
   border-radius:6px;
 }
 
-.album-text{
-  font-size:13px;
+.album-text p{
+  font-size:15px;
+}
+.album-text p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .artist-name{
@@ -433,3 +438,52 @@ span {
   text-decoration: underline;
 }
 
+.song-mix {
+  margin-left: 1.8rem;
+  height: 80px;
+
+}
+.song-mix span {
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.srch-btn {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font: 60px;
+  background: #2a2a2a;
+}
+
+.srch-btn i{
+  font-size: 23px;
+  padding: 15px;
+  opacity: 0.7;
+}
+
+
+
+/* .srch-btn input[type = "search"] {
+  border-radius: 2rem;
+  padding: 25px 0;
+  width: 80%;
+  height: 90%;
+} */
+#exampleInputEmail1 {
+  width: 20rem;
+  height: 2.5rem;
+  font-size: 28px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+input::placeholder {
+  font-size: 20px;
+  position: relative;
+  bottom: 3px;
+}

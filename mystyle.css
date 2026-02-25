@@ -27,6 +27,7 @@ body {
   overflow: auto;
   border-radius: 1rem;
   padding: 0 1.5rem 0 1.5rem;
+  background: linear-gradient(#222222, #000000 30%);
 }
 
 .music-player {
@@ -449,17 +450,19 @@ span {
 }
 
 .srch-btn {
-  width: 25rem;
+ width: 100%;             
+  max-width: 35rem;        
   height: 3rem;
   border-radius: 2rem;
-  font-weight: 600;
-  font: 60px;
   background: #2a2a2a;
+  display: flex;           
+  align-items: center;     
+  overflow: hidden;
 }
 
 .srch-btn i{
-  font-size: 23px;
-  padding: 15px;
+  font-size: 20px;
+  padding: 0 15px;
   opacity: 0.7;
 }
 
@@ -472,18 +475,35 @@ span {
   height: 90%;
 } */
 #exampleInputEmail1 {
-  width: 20rem;
-  height: 2.5rem;
-  font-size: 28px;
+  flex: 1;                
+  height: 100%;
+  font-size: 16px;         
   font-weight: 500;
   border: none;
   outline: none;
   background-color: transparent;
   color: #fff;
+  padding-right: 15px;
 }
 
 input::placeholder {
-  font-size: 20px;
-  position: relative;
-  bottom: 3px;
+  font-size: 14px;         
+  text-overflow: ellipsis;
+  /* position: relative;
+  bottom: 3px; */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
 }

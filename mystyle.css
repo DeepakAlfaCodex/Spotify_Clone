@@ -27,7 +27,6 @@ body {
   overflow: auto;
   border-radius: 1rem;
   padding: 0 1.5rem 0 1.5rem;
-  background: linear-gradient(#222222, #000000 30%);
 }
 
 .music-player {
@@ -128,10 +127,9 @@ a {
   color: #fff;
 }
 .sticky-nav {
-  border-radius: 2rem;
   position: sticky;
   top: 0;
-  background-color: #121212;
+  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,9 +160,10 @@ a {
 
 .card {
   background-color: #232323;
-  width: 150px;
+  width: 200px;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding-inline: 1rem;
+  padding-top: 1rem;
   margin-left: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -184,6 +183,59 @@ a {
 .card-info {
   font-size: 0.75rem;
   opacity: 0.7;
+  
+}
+.slide-container {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.slide-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.atst-container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.atst-container img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.atst-card p {
+  margin-left: 1rem;
+}
+.atst-card:hover{
+  background-color: #2a2a2a;
+  border-radius: 1rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+.atst-slide-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.atst-slide-container::-webkit-scrollbar {
+  display: none;
 }
 
 .footer {
@@ -200,64 +252,42 @@ a {
   opacity: 0.7;
 }
 
-/* .music-player {
-  border: 1px solid #ff0000;
-  justify-content: space-between;
-}
-
-.album {
-  border: 1px solid #000000;
-  width: 255px;
+.content-container {
   display: flex;
   justify-content: space-around;
-}
-.album img {
-  width: 56px;
-  height: 56px;
+  align-items: start;
+  line-height: 40px;
 }
 
-.album-content {
-  color: black;
-  margin-top: 1rem;
-  padding-right: 1.5rem;
+.content-container li {
+  list-style-type: none;
+  opacity: 0.7;
 }
 
-.controls {
-  width: 350px;
-  height: 100%;
-  border: 1px solid #000000;
-  position: absolute;
-  right: 0;
-  top: 0;
+.content-container li:hover {
+  opacity: 1;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.line {
   display: flex;
   justify-content: space-evenly;
-}
-.controls img {
-  width: 1.3rem;
-  height: 1.3rem;
-  background-color: black;
-  margin-top: 1.5rem;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-input[type = "range"] {
-  color: black;
-  height: 7px;
- accent-color: #ffffff;
- position: relative;
- top: 30px;
+.line li {
+  list-style-type: none;
+  opacity: 0.7;
 }
 
-.player {
-  width: 351px;
-  height: 50px;
-  position: fixed;
-  bottom: 1px;
-  left: 600px;
+.line li:hover {
+  opacity: 1;
+  text-decoration: underline;
+  cursor: pointer;
 }
-
-.player-controls img {
-  width: 1rem;
-} */
 
 .music-player{
   background:#181818;
@@ -475,7 +505,8 @@ span {
   height: 90%;
 } */
 #exampleInputEmail1 {
-  flex: 1;                
+  flex: 1;            
+  width: 450px;    
   height: 100%;
   font-size: 16px;         
   font-weight: 500;
